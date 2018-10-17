@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#607D8B"
+    tools:context="com.midhilaj.cocoalabs.cocoalabs.SetIntervelFragment">
+<LinearLayout
+
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/input_interval_"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:hint="Enter scan time interval in minutes"
+            android:inputType="numberSigned"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/submit_intervel_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"/>
+</LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+</FrameLayout>

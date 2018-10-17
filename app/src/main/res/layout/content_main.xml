@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.midhilaj.cocoalabs.cocoalabs.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+     <android.support.v7.widget.RecyclerView
+         android:id="@+id/timedetails_recyclerview"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+     </android.support.v7.widget.RecyclerView>
+<FrameLayout
+    android:id="@+id/welcomepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <LinearLayout
+         android:layout_gravity="center"
+         android:gravity="center"
+         android:layout_width="match_parent"
+         android:orientation="vertical"
+         android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+
+              android:textStyle="bold"
+              android:textSize="22sp"
+              android:text="Welcome to Battery History Tracker"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:layout_height="wrap_content" />
+          <TextView
+              android:gravity="center"
+              android:layout_marginTop="5dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="We will keep battery percentage record in each 1 min.\nTo change interval click on the top right menu icon.\nDetails will be updated after the interval (default interval is 1 min)
+"/>
+     </LinearLayout>
+
+</FrameLayout>
+     <FrameLayout
+         android:visibility="gone"
+         android:id="@+id/updateintewell"
+         android:background="@color/colorAccent"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+          <TextView
+              android:layout_gravity="right"
+              android:padding="10dp"
+              android:id="@+id/close_inter_vel_page"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="x"
+              android:textColor="#000000"
+              android:textStyle="bold"/>
+          <fragment
+
+              android:id="@+id/fragment"
+              android:name="com.midhilaj.cocoalabs.cocoalabs.SetIntervelFragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+          </LinearLayout>
+     </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>
